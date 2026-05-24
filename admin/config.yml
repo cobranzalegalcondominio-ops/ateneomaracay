@@ -9,24 +9,24 @@ media_folder: "assets/img"
 public_folder: "/assets/img"
 
 collections:
-  - name: "paginas"
+  - name: paginas
     label: "Páginas"
     files:
-      - name: "inicio"
+      - name: inicio
         label: "Página de Inicio"
         file: "content/inicio.md"
         fields:
           - { label: "Título", name: "titulo", widget: "string" }
           - { label: "Contenido", name: "contenido", widget: "markdown" }
 
-      - name: "historia"
+      - name: historia
         label: "Historia"
         file: "content/historia.md"
         fields:
           - { label: "Título", name: "titulo", widget: "string" }
           - { label: "Contenido", name: "contenido", widget: "markdown" }
 
-  - name: "eventos"
+  - name: eventos
     label: "Eventos"
     folder: "content/eventos"
     create: true
@@ -37,7 +37,7 @@ collections:
       - { label: "Descripción", name: "descripcion", widget: "markdown" }
       - { label: "Imagen", name: "imagen", widget: "image" }
 
-  - name: "noticias"
+  - name: noticias
     label: "Noticias"
     folder: "content/noticias"
     create: true
@@ -48,7 +48,7 @@ collections:
       - { label: "Contenido", name: "contenido", widget: "markdown" }
       - { label: "Imagen", name: "imagen", widget: "image" }
 
-  - name: "galeria"
+  - name: galeria
     label: "Galería"
     folder: "content/galeria"
     create: true
@@ -56,4 +56,3 @@ collections:
     fields:
       - { label: "Título", name: "titulo", widget: "string" }
       - { label: "Imagen", name: "imagen", widget: "image" }
-
