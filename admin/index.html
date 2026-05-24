@@ -2,14 +2,16 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ateneo de Maracay — Admin</title>
   </head>
   <body>
     <script src="https://unpkg.com/decap-cms@latest/dist/decap-cms.js"></script>
     <script>
-      // Esto le dice al CMS que utilice la configuración que pusimos en config.yml
-      // y evita que busque el servicio de identidad de Netlify.
+      // Forzamos la inicialización manual para evitar conflictos
       window.CMS_MANUAL_INIT = true;
+      
+      // Esperamos a que el CMS esté listo e inicializamos
       CMS.init();
     </script>
   </body>
