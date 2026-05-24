@@ -1,18 +1,56 @@
 backend:
-  name: git-gateway
-  branch: main # Asegúrate de que tu rama principal sea main
+  name: github
+  repo: TU_USUARIO/TU_REPOSITORIO
+  branch: main
 
-media_folder: "assets/images" # Carpeta donde se guardarán las fotos de los eventos
-public_folder: "assets/images"
+media_folder: "assets/img"
+public_folder: "/assets/img"
 
 collections:
+  - name: "paginas"
+    label: "Páginas"
+    files:
+      - name: "inicio"
+        label: "Página de Inicio"
+        file: "content/inicio.md"
+        fields:
+          - { label: "Título", name: "titulo", widget: "string" }
+          - { label: "Contenido", name: "contenido", widget: "markdown" }
+
+      - name: "historia"
+        label: "Historia"
+        file: "content/historia.md"
+        fields:
+          - { label: "Título", name: "titulo", widget: "string" }
+          - { label: "Contenido", name: "contenido", widget: "markdown" }
+
   - name: "eventos"
     label: "Eventos"
-    folder: "eventos" # Carpeta donde guardarás los archivos .md de cada evento
+    folder: "content/eventos"
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Título", name: "title", widget: "string"}
-      - {label: "Fecha", name: "date", widget: "datetime"}
-      - {label: "Imagen", name: "image", widget: "image"}
-      - {label: "Descripción", name: "body", widget: "markdown"}
+      - { label: "Título", name: "titulo", widget: "string" }
+      - { label: "Fecha", name: "fecha", widget: "datetime" }
+      - { label: "Descripción", name: "descripcion", widget: "markdown" }
+      - { label: "Imagen", name: "imagen", widget: "image" }
+
+  - name: "noticias"
+    label: "Noticias"
+    folder: "content/noticias"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Título", name: "titulo", widget: "string" }
+      - { label: "Fecha", name: "fecha", widget: "datetime" }
+      - { label: "Contenido", name: "contenido", widget: "markdown" }
+      - { label: "Imagen", name: "imagen", widget: "image" }
+
+  - name: "galeria"
+    label: "Galería"
+    folder: "content/galeria"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Título", name: "titulo", widget: "string" }
+      - { label: "Imagen", name: "imagen", widget: "image" }
