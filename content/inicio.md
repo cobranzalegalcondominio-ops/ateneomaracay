@@ -1,4 +1,0 @@
----
-titulo: "Inicio"
-contenido: ""
----

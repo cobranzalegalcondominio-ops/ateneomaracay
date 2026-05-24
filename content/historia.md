@@ -1,4 +1,0 @@
----
-titulo: "Historia"
-contenido: ""
----
