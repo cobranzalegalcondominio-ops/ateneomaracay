@@ -1,0 +1,14 @@
+# Configuración del CMS para Ateneo de Maracay
+media:
+  input: "assets/images"
+  output: "assets/images"
+
+content:
+  - name: "eventos"
+    label: "Eventos"
+    path: "_eventos"
+    fields:
+      - { name: "title", label: "Título", type: "string" }
+      - { name: "date", label: "Fecha", type: "date" }
+      - { name: "image", label: "Imagen", type: "image" }
+      - { name: "body", label: "Descripción", type: "rich-text" }
