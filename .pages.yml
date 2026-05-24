@@ -2,17 +2,11 @@ media:
   input: "assets/images"
   output: "assets/images"
 
-content:
-  - type: collection
-    name: "eventos"
+collections:
+  eventos:
     label: "Eventos"
     path: "_eventos"
-    slug: "{{date | date: '%Y-%m-%d'}}-{{title | slugify}}"
-    items:
-      - name: "layout"
-        label: "Layout"
-        type: "hidden"
-        default: "post"
+    fields:
       - name: "title"
         label: "Título"
         type: "string"
