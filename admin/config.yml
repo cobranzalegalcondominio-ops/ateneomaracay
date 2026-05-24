@@ -1,0 +1,17 @@
+backend:
+  name: github
+  repo: cobranzalegalcondominio-ops/ateneomaracay
+  branch: main
+  auth_type: pkce
+  app_id: Ov23liV7ZhnKuWXdb8WT
+
+media_folder: "assets/img"
+public_folder: "/assets/img"
+
+collections:
+  - name: "inicio"
+    label: "Página de Inicio"
+    file: "content/inicio.md"
+    fields:
+      - { label: "Título", name: "titulo", widget: "string" }
+      - { label: "Contenido", name: "contenido", widget: "markdown" }
