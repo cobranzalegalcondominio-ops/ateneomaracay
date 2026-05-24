@@ -1,19 +1,18 @@
 backend:
-  name: github
-  repo: cobranzalegalcondominio-ops/ateneomaracay # Tu repositorio
-  branch: main
-  base_url: https://cobranzalegalcondominio-ops.github.io # Esto soluciona el bloqueo
+  name: git-gateway
+  branch: main # Asegúrate de que tu rama principal sea main
 
-media_folder: "assets"
-public_folder: "assets"
+media_folder: "assets/images" # Carpeta donde se guardarán las fotos de los eventos
+public_folder: "assets/images"
 
 collections:
   - name: "eventos"
     label: "Eventos"
-    folder: "eventos"
+    folder: "eventos" # Carpeta donde guardarás los archivos .md de cada evento
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}"
     fields:
       - {label: "Título", name: "title", widget: "string"}
       - {label: "Fecha", name: "date", widget: "datetime"}
-      - {label: "Contenido", name: "body", widget: "markdown"}
+      - {label: "Imagen", name: "image", widget: "image"}
+      - {label: "Descripción", name: "body", widget: "markdown"}
