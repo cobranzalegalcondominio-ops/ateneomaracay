@@ -3,19 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ateneo de Maracay</title>
-    <style>
-        body { font-family: 'Arial', sans-serif; text-align: center; padding: 50px; background-color: #f9f9f9; }
-        h1 { color: #2c3e50; }
-        .info { margin-top: 20px; color: #7f8c8d; }
-    </style>
+    <title>Ateneo de Maracay | Espacio Cultural</title>
+    <meta name="description" content="Portal oficial del Ateneo de Maracay. Agenda cultural, exposiciones y talleres.">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Ateneo de Maracay</h1>
-    <p>Espacio para la cultura y las artes en la Ciudad Jardín.</p>
-    <div class="info">
-        <p>Próximamente: Eventos culturales y programación institucional.</p>
-    </div>
+
+    <header>
+        <nav>
+            <div class="logo">Ateneo de Maracay</div>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#agenda">Agenda Cultural</a></li>
+                <li><a href="#talleres">Talleres</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="inicio" class="hero">
+            <h1>Cultura y Arte en el Corazón de Maracay</h1>
+            <p>Descubre el legado histórico y la vanguardia artística de nuestra ciudad.</p>
+            <a href="#agenda" class="btn">Ver Agenda</a>
+        </section>
+
+        <!-- Sección de Eventos -->
+        <section id="agenda">
+            <h2>Próximos Eventos</h2>
+            <div class="grid-eventos">
+                <article class="evento-card">
+                    <img src="evento1.jpg" alt="Exposición de Arte">
+                    <h3>Exposición: Raíces Aragüeñas</h3>
+                    <p class="fecha">28 de Mayo, 2026</p>
+                    <button>Más información</button>
+                </article>
+                
+                <article class="evento-card">
+                    <img src="evento2.jpg" alt="Concierto de Jazz">
+                    <h3>Ciclo de Jazz y Piano</h3>
+                    <p class="fecha">05 de Junio, 2026</p>
+                    <button>Más información</button>
+                </article>
+            </div>
+        </section>
+
+        <!-- Formulario de Contacto -->
+        <section id="contacto">
+            <h2>Contáctanos</h2>
+            <form action="/procesar-contacto" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Correo:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                
+                <button type="submit" class="btn">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Ateneo de Maracay - Todos los derechos reservados.</p>
+    </footer>
+
 </body>
-</html>
 </html>
