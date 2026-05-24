@@ -3,9 +3,7 @@ backend:
   repo: cobranzalegalcondominio-ops/ateneomaracay
   branch: main
   auth_type: implicit
-  app_id: Ov23liV7ZhnKuWXdb8WT
-
-
+  app_id: 0v23liV7ZhnKuWXdb8WT
 
 media_folder: "assets/img"
 public_folder: "/assets/img"
@@ -58,3 +56,4 @@ collections:
     fields:
       - { label: "Título", name: "titulo", widget: "string" }
       - { label: "Imagen", name: "imagen", widget: "image" }
+
