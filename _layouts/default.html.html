@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }} | Ateneo de Maracay</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 0 20px; }
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>{{ page.title }}</h1>
+        <p><em>Publicado el: {{ page.date | date: "%d/%m/%Y" }}</em></p>
+        <div>{{ content }}</div>
+    </article>
+    <hr>
+    <a href="index.html">← Volver al inicio</a>
+</body>
+</html>
