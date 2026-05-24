@@ -1,9 +1,9 @@
 backend:
   name: github
-  repo: cobranzalegalcondominio-ops/ateneomaracay # Tu nombre de repo
+  repo: cobranzalegalcondominio-ops/ateneomaracay # Tu repositorio
   branch: main
 
-media_folder: "assets" # Donde se guardarán tus fotos
+media_folder: "assets"
 public_folder: "assets"
 
 collections:
@@ -11,6 +11,7 @@ collections:
     label: "Eventos"
     folder: "eventos"
     create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Título", name: "title", widget: "string"}
       - {label: "Fecha", name: "date", widget: "datetime"}
