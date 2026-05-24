@@ -2,6 +2,7 @@ backend:
   name: github
   repo: cobranzalegalcondominio-ops/ateneomaracay # Tu repositorio
   branch: main
+  base_url: https://cobranzalegalcondominio-ops.github.io # Esto soluciona el bloqueo
 
 media_folder: "assets"
 public_folder: "assets"
