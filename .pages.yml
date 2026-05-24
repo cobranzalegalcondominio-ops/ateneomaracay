@@ -1,7 +1,6 @@
 media:
   input: "assets/images"
   output: "assets/images"
-
 content:
   - type: collection
     name: "eventos"
