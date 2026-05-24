@@ -9,9 +9,12 @@ media_folder: "assets/img"
 public_folder: "/assets/img"
 
 collections:
-  - name: "inicio"
-    label: "Página de Inicio"
-    file: "content/inicio.md"
-    fields:
-      - { label: "Título", name: "titulo", widget: "string" }
-      - { label: "Contenido", name: "contenido", widget: "markdown" }
+  - name: "paginas"
+    label: "Páginas"
+    files:
+      - name: "inicio"
+        label: "Página de Inicio"
+        file: "content/inicio.md"
+        fields:
+          - { label: "Título", name: "titulo", widget: "string" }
+          - { label: "Contenido", name: "contenido", widget: "markdown" }
