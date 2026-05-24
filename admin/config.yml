@@ -1,7 +1,8 @@
 backend:
   name: github
-  repo: TU_USUARIO/TU_REPOSITORIO
+  repo: cobranzalegalcondominio-ops/ateneomaracay
   branch: main
+
 
 media_folder: "assets/img"
 public_folder: "/assets/img"
