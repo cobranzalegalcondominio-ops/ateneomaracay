@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<h1>Eventos del Ateneo de Maracay</h1>
+<ul>
+  {% for evento in site.eventos %}
+    <li>
+      <a href="{{ evento.url }}">{{ evento.title }}</a> - {{ evento.date | date: "%d/%m/%Y" }}
+    </li>
+  {% endfor %}
+</ul>
