@@ -3,10 +3,11 @@ media:
   output: "assets/images"
 
 content:
-  - name: "eventos"
+  - type: collection
+    name: "eventos"
     label: "Eventos"
     path: "_eventos"
-    fields:
+    items:
       - name: "title"
         label: "Título"
         type: "string"
